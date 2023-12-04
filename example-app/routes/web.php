@@ -135,6 +135,10 @@ Route::get('/emailview2/{id}',[AdminController::class,'emailview2']);
 Route::post('/sendemail2/{id}',[AdminController::class,'sendemail2']);
 
 
+
+require_once __DIR__ . '/jetstream.php';
+
+
 Route::post('/testimonial', [HomeController::class, 'Testimonial'])->name('Testimonial');
 Route::get('/showTestimonial',[AdminController::class,'showTestimonial']);
 Route::get('/accept/{id}',[AdminController::class,'accept']);

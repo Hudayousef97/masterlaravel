@@ -52,7 +52,7 @@
         @endif
 
         <div class="flex items-center mt-5">
-            <x-button wire:click="confirmLogout" wire:loading.attr="disabled">
+            <x-button wire:click="confirmLogout" wire:loading.attr="disabled" style="background-color: #bd166c">
                 {{ __('Log Out Other Browser Sessions') }}
             </x-button>
 
@@ -83,13 +83,13 @@
             </x-slot>
 
             <x-slot name="footer">
-                <x-secondary-button wire:click="$toggle('confirmingLogout')" wire:loading.attr="disabled">
+                <x-secondary-button wire:click="$toggle('confirmingLogout')" wire:loading.attr="disabled" style="background-color: #bd166c">
                     {{ __('Cancel') }}
                 </x-secondary-button>
 
                 <x-button class="ml-3"
                             wire:click="logoutOtherBrowserSessions"
-                            wire:loading.attr="disabled">
+                            wire:loading.attr="disabled" style="background-color: #bd166c">
                     {{ __('Log Out Other Browser Sessions') }}
                 </x-button>
             </x-slot>

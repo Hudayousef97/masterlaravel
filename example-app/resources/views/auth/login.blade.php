@@ -1,3 +1,6 @@
+@include('include.top')
+@include('include.bar')
+<br>
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
@@ -46,3 +49,4 @@
         </form>
     </x-authentication-card>
 </x-guest-layout>
+

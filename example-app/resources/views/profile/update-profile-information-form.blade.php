@@ -1,7 +1,7 @@
 
 
 
-<x-form-section submit="updateProfileInformation">
+<x-form-section submit="updateProfileInformation" >
     <x-slot name="title">
         {{ __('Profile Information') }}
     </x-slot>
@@ -72,7 +72,7 @@
                 <p class="text-sm mt-2">
                     {{ __('Your email address is unverified.') }}
 
-                    <button type="button" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" wire:click.prevent="sendEmailVerification">
+                    <button type="button" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" wire:click.prevent="sendEmailVerification" style="background-color: #bd166c">
                         {{ __('Click here to re-send the verification email.') }}
                     </button>
                 </p>
@@ -91,7 +91,7 @@
             {{ __('Saved.') }}
         </x-action-message>
 
-        <x-button wire:loading.attr="disabled" wire:target="photo">
+        <x-button wire:loading.attr="disabled" wire:target="photo" style="background-color: #bd166c">
             {{ __('Save') }}
         </x-button>
     </x-slot>
