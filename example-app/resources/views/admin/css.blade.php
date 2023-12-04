@@ -1,7 +1,7 @@
  <!-- Required meta tags -->
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <title>Corona Admin</title>
+ <title>Baby Skin</title>
  <!-- plugins:css -->
  <link rel="stylesheet" href="/admin/assets/vendors/mdi/css/materialdesignicons.min.css">
  <link rel="stylesheet" href="/admin/assets/vendors/css/vendor.bundle.base.css">
@@ -18,3 +18,9 @@
  <link rel="stylesheet" href="/admin/assets/css/style.css">
  <!-- End layout styles -->
  <link rel="shortcut icon" href="/admin/assets/images/favicon.png" />
+
+ <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+
+
+
+

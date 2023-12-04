@@ -175,169 +175,27 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="serviceimage/{{$services->image}}" alt="">
+                            <img class="img-fluid" style="height: 300px !important;width:95% !important " src="serviceimage/{{$services->image}}" alt="">
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">{{$services->names}}</h4>
                             <p>{{$services->discreption}}</p>
                             <p><b>{{$services->price}}</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+
+                         <a class="fw-medium" style="color: deeppink" href="service">Read More<i class="fa fa-arrow-right ms-2"></i></a><br>
+                         <a class="fw-medium" style="color: deeppink" href="quote">Book Now<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
+
                     </div>
                 </div>
                 @endforeach
 
 
 
-                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/هيدرافيشل-للحبوب.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">HydraFacial</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <p><b>Price: 30JD</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/download.jpeg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Botox and Filler</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <p><b>Price: 30JD</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/6f8132_c6e611baac9e4396b071d82e6b2995c7~mv2.jpg" height="50px"  alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Lash Lifting</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <p><b>Price: 30JD</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/microblading-678x446.jpeg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Microblading</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <p><b>Price: 30JD</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/pngtree-skin-care-products-beautiful-plant-background-picture-image_2252500.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Lip Augmentation</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <p><b>Price: 30JD</b></p>
-                            <!-- <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </div>
-    {{-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Our Services</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/هيدرافيشل-للحبوب.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">HydraFacial</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/ضضض-640x360.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Mesotherapy</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/download.jpeg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Botox and Filler </h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/6f8132_c6e611baac9e4396b071d82e6b2995c7~mv2.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Lash Lifting</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/microblading-678x446.jpeg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Microblading</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/pngtree-skin-care-products-beautiful-plant-background-picture-image_2252500.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Lip Augmentation</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="./service">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
+
     <!-- Service End -->
     <!-- doctor start -->
     <div class="container-xxl py-5">
@@ -348,11 +206,11 @@
             <div class="row g-10">
 
                     @foreach($doctor as $doctors)
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" hight: 200px>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s" >
 
                     <div class="team-item"  >
                         <div class="overflow-hidden position-relative" >
-                            <img class="img-fluid" src="doctorimage/{{$doctors->image}}" alt="" >
+                            <img class="img-fluid" style="height: 300px !important;width:95% !important " src="doctorimage/{{$doctors->image}}" alt="" >
                             <div class="team-social">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -365,6 +223,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 @endforeach
             </div></div></div>
@@ -472,16 +331,43 @@
                               <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
                                 <input type="date" name="date" class="form-control">
                               </div>
-                              <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+
+                              <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+                                <input type="time" name="time" class="form-control">
+                              </div>
+
+
+                              <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+
+                                <select name="speciality" id="departement" class="custom-select">
+                                    <option>---Select Service---</option>
+
+                                    @foreach($service as $services)
+                                    <option value="{{$services->names}}">{{$services->names}}</option>
+                                    @endforeach
+
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+
                                 <select name="doctor" id="departement" class="custom-select">
-                                    <option>---Select option---</option>
+
+
+
+                                    <option>---Select Doctor---</option>
 
                                   @foreach($doctor as $doctors)
-                                    <option value="{{$doctors->name}}">{{$doctors->name}}---speciality---{{$doctors->speciality}}</option>
+                                    <option value="{{$doctors->name}}">{{$doctors->name}}</option>
                                     @endforeach
 
                                 </select>
                               </div>
+
+
+
                               <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
                                 <input type="text" name="number" class="form-control" placeholder="Number..">
                               </div>
@@ -490,7 +376,7 @@
                               </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
+                            <button type="submit" class="btn btn-primary mt-3 wow zoomIn" style="color:rgb(18, 18, 18);font-weight:bolder;border:5px rgb(17, 16, 16) solid">Submit Request</button>
                           </form>
                     </div>
                 </div>
@@ -498,11 +384,13 @@
         </div>
     </div>
     <!-- Quote End -->
-    {{-- <option selected>Select A Service</option>
-    <option value="1">Routine Skin Care</option>
-    <option value="2">Deep Skin Care</option>
-    <option value="3">Revitalizing injections</option> --}}
 
+
+
+
+
+
+<!--contact end-->
     <!-- Team Start -->
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
@@ -530,47 +418,55 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Testimonial</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Dana</h5>
-                        <span class="fst-italic">Perfect</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/Mental-Strong-Women-min.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Sara</h5>
-                        <span class="fst-italic">Amazing</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/images.jpeg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Leen</h5>
-                        <span class="fst-italic">Very good
-
-
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Testimonial End -->
 
 
     <!-- Footer Start -->
-    @include('include.footer')
+
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s"  >
+    <div class="container py-5 ">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Address</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>10th, Aqaba, Jordan</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>00962795844698</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Services</h4>
+                <a class="btn btn-link" href="">HydraFacial</a>
+                <a class="btn btn-link" href="">Dermaben</a>
+                <a class="btn btn-link" href="">LVL</a>
+                <a class="btn btn-link" href="">Microblending</a>
+                <a class="btn btn-link" href="">Mesotherapy</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="about">About Us</a>
+                <a class="btn btn-link" href="contact">Contact Us</a>
+                <a class="btn btn-link" href="service">Our Services</a>
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Newsletter</h4>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
+                    <a href="{{ route('register') }}">   <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"style="background:white;border:1px solid white;font-weight: bold; color:black ">  SignUp</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
     <!-- Footer End -->
 
 

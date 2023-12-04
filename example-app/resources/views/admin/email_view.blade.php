@@ -13,6 +13,8 @@
 label{
     display:inline-block;
     width: 200px;
+    color: black;
+    font-size:x-large;
 }
 
 
@@ -23,15 +25,22 @@ label{
   <body>
     <div class="container-scroller">
 
+    {{-- <div class="container-scroller"> --}}
+
       <!-- partial:partials/_sidebar.html -->
       @include ('admin.sidebar')
 
 
       @include ('admin.navbar')
 
-      <div class="container-fluid page-body-wrapper">
+      <div class="container mt-5">
 
-
+        <div>
+            <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Send Email </h1>
+</div>
+<br>
+<hr>
+<br>
 <div class="container" align="center" style="padding-top:100px;">
 
     @if(session()->has('message'))
@@ -44,47 +53,44 @@ label{
 @endif
 
 
-    <form action="{{url('sendemail',$data->id)}}" method="POST" >
-    @csrf
-   <div style="padding:15px">
-<label>Greeting</label>
-<input type="text"style="color:black;" name="greeting"  required="">
+<form action="{{url('sendemail',$data->id)}}" method="POST" >
+ @csrf
+    <div style="padding:15px">
+        <label>Greeting</label>
+        <input type="text"style="color:black;" name="greeting"  required="">
+    </div>
 
-</div>
 
-
-<div style="padding:15px">
-    <label>Body</label>
-    <input type="text"style="color:black;" name="body"  required="">
+    <div style="padding:15px">
+        <label>Body</label>
+        <input type="text"style="color:black;" name="body"  required="">
 
     </div>
 
 
-
-
-        <div style="padding:15px">
+    <div style="padding:15px">
             <label>Action Text</label>
             <input type="text"style="color:black;" name="actiontext" >
 
-            </div>
+    </div>
 
-            <div style="padding:15px">
+    <div style="padding:15px">
                 <label>Action Url</label>
                 <input type="text"style="color:black;" name="actionurl" >
 
-                </div>
+    </div>
 
-                <div style="padding:15px">
+    <div style="padding:15px">
                     <label>End Part</label>
                     <input type="text"style="color:black;" name="endpart" >
 
-                    </div>
+    </div>
 
 
-            <div style="padding:15px">
-                <input type="submit" class="btn btn-success" required="" >
+    <div style="padding:15px">
+                <input type="submit" class="btn btn-success" required=""style="background-color:green" >
 
-                </div>
+    </div>
 
 
 </form>
@@ -92,7 +98,7 @@ label{
 
 </div>
       </div>
-
+</div>
         <!-- partial -->
     <!-- container-scroller -->
    @include('admin.script')

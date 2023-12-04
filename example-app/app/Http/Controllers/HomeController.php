@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Doctor;
 use App\Models\Service;
+use App\Models\Contact;
+use App\Models\Testimonial;
 
 use App\Models\Appointment;
 use App\Http\Controllers\Controller;
@@ -21,11 +23,25 @@ class HomeController extends Controller
 
                 $doctor = Doctor::all();
                 $service = Service::all();
+                $testimonial=Testimonial::where('status', '=','active')->get();
 
 
-                return view('user.home',compact('doctor'),compact('service'));
+                return view('user.home',compact('doctor'),compact('service'),compact('testimonial'));
             } else{
-                return view('admin.home');
+                $data = User::all();
+
+                $totaldoctor=Doctor::all()->count();
+
+                $totalappoint=Appointment::where('status', 'Approved')->count();
+                $totalappointcanceled=Appointment::where('status', 'Canceled')->count();
+                $totalappointprogress=Appointment::where('status', 'In progress')->count();
+
+                $totalservice=Service::all()->count();
+
+                $totalcontact=Contact::all()->count();
+
+                $totaluser=User::all()->count();
+                return view('admin.home',compact('data','totaldoctor','totalappoint','totalservice','totalcontact','totaluser','totalappointcanceled','totalappointprogress'));
             }
 
         } else {
@@ -33,7 +49,11 @@ class HomeController extends Controller
             }
         }
 
-    public function index()  {
+
+
+
+
+        public function index()  {
 
         if (Auth::id())
         {
@@ -44,9 +64,14 @@ else{
 
       $doctor = Doctor::all();
       $service = Service::all();
+      $testimonial=Testimonial::where('status', '=','active')->get();
 
-        return view('user.home',compact('doctor'),compact('service'));
-}}
+        return view('user.home',compact('doctor'),compact('service'),compact('testimonial'));
+ }
+
+  }
+
+
 
     public function getTeam()  {
         $doctor = Doctor::all();
@@ -63,8 +88,16 @@ else{
 
     public function getQuote()  {
         $doctor = Doctor::all();
+        $service = Service::all();
 
-        return view('front.quote',compact('doctor'));
+        return view('front.quote',compact('doctor','service',));
+
+    }
+    public function getTestimonial ()  {
+        $doctor = Doctor::all();
+        $service = Service::all();
+        $testimonial=Testimonial::where('status', '=','active')->get();
+        return view('front.testimonial',compact('doctor','service','testimonial'));
 
     }
 
@@ -75,7 +108,11 @@ else{
         $data->name=$request->name;
         $data->email=$request->email;
         $data->date=$request->date;
+        $data->time=$request->time;
+
         $data->phone=$request->number;
+        $data->speciality=$request->speciality;
+
         $data->message=$request->message;
         $data->doctor=$request->doctor;
         $data->status='In progress';
@@ -125,6 +162,49 @@ return redirect()->back();
 }
 
 
+public function showContactForm()
+{
+    return view('front.contact');
+}
 
+
+public function submitContactForm(Request $request)
+{
+
+    $data= new contact ;
+
+    $data->name=$request->name;
+    $data->email=$request->email;
+    $data->subject=$request->subject;
+    $data->message=$request->message;
+
+    $data->save();
+
+           return redirect('home')->with('message','Message Request Successfully. We Will Contact With You Soon ');
+
+
+
+}
+
+
+
+
+public function Testimonial(REQUEST $request){
+
+    $data= new Testimonial() ;
+
+    $data->name=$request->name;
+    $data->email=$request->email;
+    $data->service=$request->service;
+    $data->doctor=$request->doctor;
+    $data->date=$request->date;
+    $data->time=$request->time;
+    $data->message=$request->message;
+    $data->status='In progress';
+    $data->save();
+
+           return redirect('home')->with('message','Thank you for providing feedback. We appreciate your efforts in sharing your thoughts and helping us improve our services.');
+
+}
 
 }

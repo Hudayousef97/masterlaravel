@@ -51,11 +51,20 @@ Route::get('/admin', function () {
 
 Route::get('/home',[HomeController::class,'redirect'])->middleware('auth','verified');
 
+
+// routes/web.php
+// Route::get('/home',[AdminController::class,'index']);
+// Route::get('/home', [AdminController::class, 'index'])->name('admin.home');
+// Route::get('/admin/home',[AdminController::class,'getDoctor'])->name('getDoctorr');
+
+
 Route::get('/',[HomeController::class,'index']);
 Route::get('/team',[HomeController::class,'getTeam'])->name('getTeam');
 Route::get('/service',[HomeController::class,'getService'])->name('getService');
 
 Route::get('/quote',[HomeController::class,'getQuote'])->name('getQuote');
+Route::get('/testimonial', [HomeController::class,'getTestimonial'])->name('getTestimonial');
+
 
 
 
@@ -69,6 +78,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+// Route::get('/home',[AdminController::class,'userindexhome']);
+
 Route::get('/add_doctor_view',[AdminController::class,'addview']);
 
 Route::post('/upload_doctor',[AdminController::class,'upload']);
@@ -80,6 +91,9 @@ Route::get('/myappointment',[HomeController::class,'myappointment']);
 Route::get('/cancel_appoint/{id}',[HomeController::class,'cancel_appoint']);
 
 Route::get('/showappointment',[AdminController::class,'showappointment']);
+Route::get('/updateappoint/{id}',[AdminController::class,'updateappoint']);
+Route::post('/editappoint/{id}',[AdminController::class,'editappoint']);
+
 
 Route::get('/approved/{id}',[AdminController::class,'approved']);
 
@@ -108,4 +122,21 @@ Route::get('/deleteservice/{id}',[AdminController::class,'deleteservice']);
 Route::get('/updateservice/{id}',[AdminController::class,'updateservice']);
 
 Route::post('/editservice/{id}',[AdminController::class,'editservice']);
+
+
+Route::get('/user',[AdminController::class,'userindex']);
+// Route::get('/user/{id}',[AdminController::class,'edit']);
+
+
+Route::get('/contact', [HomeController::class, 'showContactForm'])->name('contact.show');
+Route::post('/contact', [HomeController::class, 'submitContactForm'])->name('contact.submit');
+Route::get('/showcontact',[AdminController::class,'showcontact']);
+Route::get('/emailview2/{id}',[AdminController::class,'emailview2']);
+Route::post('/sendemail2/{id}',[AdminController::class,'sendemail2']);
+
+
+Route::post('/testimonial', [HomeController::class, 'Testimonial'])->name('Testimonial');
+Route::get('/showTestimonial',[AdminController::class,'showTestimonial']);
+Route::get('/accept/{id}',[AdminController::class,'accept']);
+Route::get('/reject/{id}',[AdminController::class,'reject']);
 

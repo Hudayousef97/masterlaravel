@@ -14,21 +14,30 @@
       @include ('admin.navbar')
 
         <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
-            <div align="center" style="padding:100px;">
-                <table style="border: 1px black solid">
+        <div class="container mt-5">
+
+            <div>
+                <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Service </h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+            <div align="center" style="padding:100px;color:black">
+                <table style="border: 1px black solid" id="myDataTable">
+                    <thead>
                     <tr style="background: linear-gradient(rgba(216, 170, 218, 0.7),rgba(53, 53, 53, .7));color:whitesmoke;">
-                        <th style="padding: 10px;font-size:20px;">Service Name  </th>
-                        <th style="padding: 10px;font-size:20px;"> Discreption</th>
-                        <th style="padding: 10px;font-size:20px;">Price </th>
-                        <th style="padding: 10px;font-size:20px;"> Image </th>
-                        <th style="padding: 10px;font-size:20px;"> Delete </th>
-                        <th style="padding: 10px;font-size:20px;"> Update </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center">Service Name  </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Discreption</th>
+                        <th style="padding: 10px;font-size:20px;text-align:center">Price </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Image </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Delete </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Update </th>
 
 
 
                     </tr>
-
+                    </thead>
+                    <tbody>
                     @foreach($data as $service)
 
                     <tr style="background-color:rgb(245,245,245) ;color:black;"  align="center">
@@ -44,7 +53,7 @@
                 @endforeach
 
 
-
+                    </tbody>
                 </table>
 
 

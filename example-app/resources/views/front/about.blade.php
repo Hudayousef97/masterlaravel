@@ -19,9 +19,9 @@
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">About Me</h1>
             <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="index">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <ol class=""style="display:flex;font-size:30px">
+                    <li class="breadcrumb-item"><a class="text-black" href="home">Home/</a></li>
+                    <li class="breadcrumb-item"><a class="text-black" href="#">Pages/</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">About</li>
                 </ol>
             </nav>

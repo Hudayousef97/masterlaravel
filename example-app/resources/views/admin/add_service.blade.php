@@ -11,6 +11,7 @@
 label{
     display:inline-block;
     width: 200px;
+    color: black;
 }
 
 
@@ -27,10 +28,15 @@ label{
 
       @include ('admin.navbar')
 
-      <div class="container-fluid page-body-wrapper">
+      <div class="container mt-5">
+        <div>
+            <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Add Service </h1>
+</div>
+<br>
+<hr>
+<br>
 
-
-<div class="container" align="center" style="padding-top:100px;">
+<div class="container" align="center" style="padding-top:100px;color:black;font-size:x-large">
 
     @if(session()->has('message'))
     <div class="alert alert-success">
@@ -44,7 +50,7 @@ label{
 
     <form action="{{url('upload_service')}}" method="POST" enctype="multipart/form-data">
     @csrf
-   <div style="padding:15px">
+   <div style="padding:15px;color:black">
 <label>Service Name</label>
 <input type="text"style="color:black;" name="names" placeholder="Write the name" required="">
 

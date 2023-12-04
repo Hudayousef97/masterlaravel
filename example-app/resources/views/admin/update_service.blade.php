@@ -32,7 +32,14 @@
       @include ('admin.navbar')
 
         <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
+        <div class="container mt-5">
+
+            <div>
+                <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Update Service </h1>
+    </div>
+    <br>
+    <hr>
+    <br>
 
 
 

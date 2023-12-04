@@ -60,4 +60,17 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $appends = [
         'profile_photo_url',
     ];
+
+
+     /**
+     * Get the notification routing information for the database channel.
+     *
+     * @return array
+     */
+    public function routeNotificationForDatabase()
+    {
+        // Assuming you have a 'notifications' table
+        // and you want to store notifications there.
+        return ['notifications'];
+    }
 }

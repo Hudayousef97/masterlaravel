@@ -10720,8 +10720,8 @@ textarea.is-invalid.tt-hint {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #ffffff;
-    background-color: black;
-    border-color: #2c2e33 #2c2e33 black; }
+    background-color: white;
+    border-color: #2c2e33 #2c2e33 rgb(245, 243, 243); }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -10735,7 +10735,7 @@ textarea.is-invalid.tt-hint {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd; }
+  background-color: #e6e9ee; }
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
@@ -11150,7 +11150,7 @@ textarea.is-invalid.tt-hint {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #191c24;
+  /* background-color: #ffff; */
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -20325,7 +20325,7 @@ div.tagsinput {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 70px);
-  background: #191c24;
+  background: linear-gradient(rgba(200, 171, 201, .7), rgba(53, 53, 53, .7));
   font-weight: normal;
   padding: 0;
   width: 244px;
@@ -20339,21 +20339,21 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: linear-gradient(rgba(200, 171, 201), rgba(53, 53, 53));
     width: 244px;
     height: 70px; }
     @media (max-width: 991px) {
       .sidebar .sidebar-brand-wrapper {
         width: 55px; } }
     .sidebar .sidebar-brand-wrapper .sidebar-brand {
-      color: #38425e;
+      color: whitesmoke;
       font-size: 1.5rem;
       line-height: 48px;
       margin-right: 0;
       padding: 0rem 0rem 0rem 1.3rem;
       width: 100%; }
       .sidebar .sidebar-brand-wrapper .sidebar-brand:active, .sidebar .sidebar-brand-wrapper .sidebar-brand:focus, .sidebar .sidebar-brand-wrapper .sidebar-brand:hover {
-        color: #252b3e; }
+        color: #00314e; }
       .sidebar .sidebar-brand-wrapper .sidebar-brand img {
         width: calc(244px - 120px);
         max-width: 100%;
@@ -20393,7 +20393,7 @@ div.tagsinput {
         align-items: center;
         white-space: nowrap;
         padding: 0.8rem 10px 0.8rem 1.188rem;
-        color: #6c7293;
+        color:  #eceeee;
         -webkit-transition-duration: 0.45s;
         -moz-transition-duration: 0.45s;
         -o-transition-duration: 0.45s;
@@ -20408,7 +20408,7 @@ div.tagsinput {
             font-size: 1rem;
             line-height: 1;
             margin-left: auto;
-            color: #bba8bff5; }
+            color: #00314e; }
             .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
               margin-left: 0;
               margin-right: auto; }
@@ -20430,14 +20430,14 @@ div.tagsinput {
         .sidebar .nav .nav-item .nav-link .menu-title {
           color: inherit;
           display: inline-block;
-          font-size: 0.9375rem;
+          font-size: larger;
           line-height: 1;
           vertical-align: middle; }
         .sidebar .nav .nav-item .nav-link .badge {
           margin-right: auto;
           margin-left: 1rem; }
       .sidebar .nav .nav-item.active > .nav-link {
-        background: #0f1015;
+        background: #d2d2d4;
         position: relative; }
         .sidebar .nav .nav-item.active > .nav-link:before {
           content: "";
@@ -20644,7 +20644,7 @@ div.tagsinput {
   .sidebar-tinted .sidebar .sidebar-brand-wrapper {
     background: #fa424a; }
   .sidebar-tinted .sidebar .nav .nav-item .nav-link {
-    color: #ffffff; }
+    color:#e7ebec; }
     .sidebar-tinted .sidebar .nav .nav-item .nav-link .menu-icon i {
       color: white; }
     .sidebar-tinted .sidebar .nav .nav-item .nav-link i.menu-arrow {
@@ -20828,7 +20828,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background: #bfbfbf;
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;

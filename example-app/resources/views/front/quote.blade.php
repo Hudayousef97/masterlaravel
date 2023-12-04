@@ -18,11 +18,11 @@
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">BOOK NOW</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Sign Up</li>
+            <nav aria-label="breadcrumb animated slideInDown" >
+                <ol class=""style="display:flex;font-size:30px">
+                    <li class="breadcrumb-item" ><a class="text-black" href="home">Home/</a></li>
+                    <li class="breadcrumb-item"><a class="text-black" href="#">Pages/</a></li>
+                    <li class="breadcrumb-item text-pink active" aria-current="page">Sign Up</li>
                 </ol>
             </nav>
         </div>
@@ -59,16 +59,43 @@
                               <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
                                 <input type="date" name="date" class="form-control">
                               </div>
-                              <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+
+                              <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+                                <input type="time" name="time" class="form-control">
+                              </div>
+
+
+                              <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+
+                                <select name="speciality" id="departement" class="custom-select">
+                                    <option>---Select Service---</option>
+
+                                    @foreach($service as $services)
+                                    <option value="{{$services->names}}">{{$services->names}}</option>
+                                    @endforeach
+
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+
                                 <select name="doctor" id="departement" class="custom-select">
-                                    <option>---Select option---</option>
+
+
+
+                                    <option>---Select Doctor---</option>
 
                                   @foreach($doctor as $doctors)
-                                    <option value="{{$doctors->name}}">{{$doctors->name}}---speciality---{{$doctors->speciality}}</option>
+                                    <option value="{{$doctors->name}}">{{$doctors->name}}</option>
                                     @endforeach
 
                                 </select>
                               </div>
+
+
+
                               <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
                                 <input type="text" name="number" class="form-control" placeholder="Number..">
                               </div>
@@ -77,7 +104,7 @@
                               </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
+                            <button type="submit" class="btn btn-primary mt-3 wow zoomIn" style="color:rgb(18, 18, 18);font-weight:bolder;border:5px rgb(17, 16, 16) solid">Submit Request</button>
                           </form>
                     </div>
                 </div>

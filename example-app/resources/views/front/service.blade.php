@@ -18,9 +18,9 @@
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Service</h1>
             <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="index">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <ol class=""style="display:flex;font-size:30px">
+                    <li class="breadcrumb-item"><a class="text-black" href="home">Home/</a></li>
+                    <li class="breadcrumb-item"><a class="text-black" href="#">Pages/</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Service</li>
                 </ol>
             </nav>
@@ -42,7 +42,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="serviceimage/{{$services->image}}" alt="">
+                            <img class="img-fluid" style="height: 300px !important;width:95% !important ;" src="serviceimage/{{$services->image}}" alt="">
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">{{$services->names}}</h4>

@@ -27,10 +27,16 @@ label{
 
       @include ('admin.navbar')
 
-      <div class="container-fluid page-body-wrapper">
+      <div class="container mt-5">
 
+        <div>
+            <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Add Doctor </h1>
+</div>
+<br>
+<hr>
+<br>
 
-<div class="container" align="center" style="padding-top:100px;">
+<div class="container" align="center" style="padding-top:100px;color:black;font-size:x-large">
 
     @if(session()->has('message'))
     <div class="alert alert-success">
@@ -59,7 +65,7 @@ label{
 
 
 
-<div style="padding:15px">
+{{-- <div style="padding:15px">
     <label>Speciality</label>
     <input type="text"style="color:black;" name="speciality" placeholder="Write the speciality"required="">
 
@@ -69,7 +75,7 @@ label{
             <label>Room No.</label>
             <input type="text"style="color:black;" name="room" placeholder="Write the room number">
 
-            </div>
+            </div> --}}
 
             <div style="padding:15px">
                 <label>Doctor Image</label>
