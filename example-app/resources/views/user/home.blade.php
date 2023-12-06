@@ -33,6 +33,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Baby Skin</h5>
+
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Radiant and Vibrant Skin Perpetually</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">HydraFacial is a non-invasive skincare treatment that combines exfoliation, hydration, and serums to improve skin texture and radiance. It addresses various concerns like fine lines, clogged pores, and uneven tone. Suitable for all skin types, it offers quick and noticeable results.</p>
                                 <a href="./service" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
@@ -113,52 +114,58 @@
     <!-- Feature Start -->
 
 
+ <!-- About Start -->
+ <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    {{-- <img class="position-absolute img-fluid " src="img/WhatsApp Image 2023-09-14 at 09.21.07 2.jpg" width="100%" alt=""> --}}
 
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/ضضض-640x360.jpg" style="object-fit: cover;" alt="">
-                    </div>
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/WhatsApp Image 2023-12-06 at 02.46.28_86bcf54f.jpg" style="object-fit: cover;" alt="">
                 </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">About Me</h1>
-                        </div>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <div class="row g-4 mb-4 pb-2">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-users fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="fw-medium mb-0">Happy Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="fw-medium mb-0">Projects Done</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary py-3 px-5"style="background: linear-gradient(rgba(200, 171, 201, .7), rgba(53, 53, 53, .7));border:1px solid white">Explore More</a>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    <div class="section-title text-start">
+                        <h1 class="display-5 mb-4">About Me</h1>
+                        <h2 class="display-5 mb-4">Doaa Alkhawaldeh</h2>
+
                     </div>
+                    <p class="mb-4 pb-2"> My name is Duaa, and I have been working as a skin specialist since 2019. With several years of experience in the field, I am dedicated to providing the best care and solutions for all your skincare needs.<br>
+                    </p>
+                    <div class="row g-4 mb-4 pb-2">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-users fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="fw-medium mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-check fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="fw-medium mb-0">Appointment Done </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about" class="btn btn-primary py-3 px-5"style="background: linear-gradient(rgba(200, 171, 201, .7), rgba(53, 53, 53, .7));border:1px solid white">Explore More</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+
     <!-- About End -->
 
 
@@ -237,9 +244,9 @@
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 ps-lg-0">
                         <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">Why Choose Us</h1>
+                            <h1 class="display-5 mb-4">  Why Choose Us</h1>
                         </div>
-                        <p class="mb-4 pb-2"> We stand as a temporary yet exquisite refuge for revitalization and unmatched quality. Our unwavering dedication to excellence shines through all aspects of our services. Backed by extensive expertise and unwavering commitment, we provide an experience beyond ordinary. The moment you enter, you're enveloped in a cocoon of pure comfort. Our team's profound grasp of skincare ensures that every visit is marked by personalized precision. We blend the artistry of gentle touch with the science of dermatology, creating a harmonious interplay that resonates with your skin's unique requisites. Within this realm of aesthetic finesse, we seamlessly merge luxury with effectiveness. Make us your preferred choice today and embark on a voyage where your skin's vivacity and allure become our exclusive pursuit.</p>
+                        <p class="mb-4 pb-2"> Choosing our skin care clinic means choosing a dedicated and knowledgeable team that prioritizes your skin health and beauty.</p>
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
@@ -247,8 +254,7 @@
                                         <i class="fa fa-check fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="mb-2">Quality</p>
-                                        <h5 class="mb-0">Services</h5>
+                                        <h5 class="mb-0">Expertise and Experience</h5>
                                     </div>
                                 </div>
                             </div>
@@ -258,8 +264,7 @@
                                         <i class="fa fa-user-check fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="mb-2">Creative</p>
-                                        <h5 class="mb-0">Designers</h5>
+                                        <h5 class="mb-0">Certified Professionals</h5>
                                     </div>
                                 </div>
                             </div>
@@ -269,8 +274,7 @@
                                         <i class="fa fa-drafting-compass fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="mb-2">Free</p>
-                                        <h5 class="mb-0">Consultation</h5>
+                                        <h5 class="mb-0">Client Satisfaction</h5>
                                     </div>
                                 </div>
                             </div>
@@ -280,8 +284,7 @@
                                         <i class="fa fa-headphones fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="mb-2">Customer</p>
-                                        <h5 class="mb-0">Support</h5>
+                                        <h5 class="mb-0">Transparent Communication</h5>
                                     </div>
                                 </div>
                             </div>
@@ -392,33 +395,14 @@
 
 <!--contact end-->
     <!-- Team Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid " src="img/WhatsApp Image 2023-09-14 at 09.21.07 2.jpg" width="100%" alt="">
-  .                  </div>
-                </div>
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="">
-                        <h1> Doaa Alkhawaldeh</h1>
-                        </div>
-                        <p ><strong>
-                            My name is Duaa, and I have been working as a skin specialist since 2019. With several years of experience in the field, I am dedicated to providing the best care and solutions for all your skincare needs.<br>
-                            Proudly, I hold numerous recognized certifications in the field of skincare from reputable institutions. What sets me apart is my profound passion for helping people achieve healthy and beautiful skin. I am always delighted to witness the happiness and confidence that radiate from the faces of those who visit my clinic. At [Clinic Name], you will find a place where expertise and personal care come together to meet your needs and achieve the best results for your skin.
-                        </strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-   
+
     <!-- Testimonial End -->
 
 
@@ -455,9 +439,8 @@
 
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
+
+                <div class="position-relative mx-auto" >
                     <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
                     <a href="{{ route('register') }}">   <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"style="background:white;border:1px solid white;font-weight: bold; color:black ">  SignUp</button></a>
                 </div>

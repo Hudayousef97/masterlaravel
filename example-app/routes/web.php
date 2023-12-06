@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 Route::get('/about', function () {
     return view('front.about');
-});
+})->name('about');
 Route::get('/contact', function () {
     return view('front.contact');
 });
@@ -32,7 +32,7 @@ Route::get('/quote', function () {
 });
 Route::get('/service', function () {
     return view('front.service');
-});
+})->name('service');
 // Route::get('/team', function () {
 //     return view('front.team');
 // });
@@ -52,13 +52,10 @@ Route::get('/admin', function () {
 Route::get('/home',[HomeController::class,'redirect'])->middleware('auth','verified');
 
 
-// routes/web.php
-// Route::get('/home',[AdminController::class,'index']);
-// Route::get('/home', [AdminController::class, 'index'])->name('admin.home');
-// Route::get('/admin/home',[AdminController::class,'getDoctor'])->name('getDoctorr');
 
 
-Route::get('/',[HomeController::class,'index']);
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/team',[HomeController::class,'getTeam'])->name('getTeam');
 Route::get('/service',[HomeController::class,'getService'])->name('getService');
 
@@ -126,6 +123,9 @@ Route::post('/editservice/{id}',[AdminController::class,'editservice']);
 
 Route::get('/user',[AdminController::class,'userindex']);
 // Route::get('/user/{id}',[AdminController::class,'edit']);
+Route::get('/deleteUser/{id}',[AdminController::class,'deleteUser']);
+Route::get('/updateUser/{id}',[AdminController::class,'updateUser']);
+Route::post('/editUser/{id}',[AdminController::class,'editUser']);
 
 
 Route::get('/contact', [HomeController::class, 'showContactForm'])->name('contact.show');
@@ -133,6 +133,7 @@ Route::post('/contact', [HomeController::class, 'submitContactForm'])->name('con
 Route::get('/showcontact',[AdminController::class,'showcontact']);
 Route::get('/emailview2/{id}',[AdminController::class,'emailview2']);
 Route::post('/sendemail2/{id}',[AdminController::class,'sendemail2']);
+Route::get('/deleteContact/{id}',[AdminController::class,'deleteContact']);
 
 
 

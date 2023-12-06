@@ -22,7 +22,7 @@
                 <ol class=""style="display:flex;font-size:30px">
                     <li class="breadcrumb-item" ><a class="text-black" href="home">Home/</a></li>
                     <li class="breadcrumb-item"><a class="text-black" href="#">Pages/</a></li>
-                    <li class="breadcrumb-item text-pink active" aria-current="page">Sign Up</li>
+                    <li class="breadcrumb-item text-pink active" aria-current="page">Book Now</li>
                 </ol>
             </nav>
         </div>
@@ -68,6 +68,7 @@
                               <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
 
                                 <select name="speciality" id="departement" class="custom-select">
+
                                     <option>---Select Service---</option>
 
                                     @foreach($service as $services)

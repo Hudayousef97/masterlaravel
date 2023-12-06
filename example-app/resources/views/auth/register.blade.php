@@ -1,5 +1,7 @@
 @include('include.top')
-@include('include.bar')<br>
+@include('include.bar')
+@include('include.bottom')
+<br>
 <x-guest-layout >
     <x-authentication-card >
         <x-slot name="logo">

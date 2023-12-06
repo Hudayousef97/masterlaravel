@@ -130,7 +130,7 @@
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
           </span>
-          <span class="menu-title fs-4">Testimonial</span>
+          <span class="menu-title fs-4">Feedback</span>
         </a>
       </li>
 

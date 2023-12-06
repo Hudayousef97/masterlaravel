@@ -14,7 +14,11 @@
       @include ('admin.navbar')
 
         <!-- partial -->
-        <div class="container mt-5" >
+        <div>
+            <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Appointment </h1>
+</div>
+<br>
+<hr>
             <div align="center" style="padding:200px;color:black;font-size:large">
                 <table  style="border: 1px black solid" id="myDataTable" >
                     <thead>
@@ -24,8 +28,8 @@
                         <th style="padding: 10px;font-size:20px;">Phone </th>
                         <th style="padding: 10px;font-size:20px;"> Address </th>
                         <th style="padding: 10px;font-size:20px;"> User-type </th>
-                        {{-- <th style="padding: 10px;font-size:20px;"> Delete </th>
-                        <th style="padding: 10px;font-size:20px;"> Update </th> --}}
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Delete </th>
+                        <th style="padding: 10px;font-size:20px;"> Update </th>
 
 
 
@@ -40,25 +44,18 @@
                         <td style="padding: 10px;">{{ $User->phone}}</td>
                         <td style="padding: 10px;">{{ $User->address}}</td>
                         <td style="padding: 10px;">{{ $User->usertype}}</td>
+                        <td> <a class="btn btn-danger" onclick="return confirm('are you sure to delete this')"  href="{{url('deleteUser',$User->id)}}">Delete</a> </td>
+                        <td> <a class="btn btn-primary" href="{{url('updateUser',$User->id)}}">Update</a> </td>
 
-{{--
-                        <td> <a class="btn btn-danger" onclick="return confirm('are you sure to delete this')"  href="{{url('deleteservice',$service->id)}}">Delete</a> </td>
-                        <td> <a class="btn btn-primary" href="{{url('updateservice',$service->id)}}">Update</a> </td> --}}
 
 
                     </tr>
 
                 @endforeach
-            </tbody>
+                </tbody>
 
 
                 </table>
-
-
-
-
-
-
 
 
             </div>

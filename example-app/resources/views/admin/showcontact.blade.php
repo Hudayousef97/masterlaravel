@@ -30,6 +30,8 @@
                         <th style="padding: 10px;font-size:20px;text-align:center"> Subject </th>
                         <th style="padding: 10px;font-size:20px;text-align:center"> Message </th>
                         <th style="padding: 10px;font-size:20px;text-align:center"> Send Mail </th>
+                        <th style="padding: 10px;font-size:20px;text-align:center"> Delete </th>
+
 
 
 
@@ -45,6 +47,7 @@
                         <td style="padding: 10px;">{{$contact->message}}</td>
 
                         <td> <a class="btn btn-primary" href="{{url('emailview2',$contact->id)}}">Send Mail</a></td>
+                        <td> <a class="btn btn-danger" onclick="return confirm('are you sure to delete this')"  href="{{url('deleteContact',$contact->id)}}">Delete</a> </td>
 
 
                     </tr>

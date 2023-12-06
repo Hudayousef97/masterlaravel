@@ -16,11 +16,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Services</h4>
-                <a class="btn btn-link" href="">HydraFacial</a>
-                <a class="btn btn-link" href="">Dermaben</a>
-                <a class="btn btn-link" href="">LVL</a>
-                <a class="btn btn-link" href="">Microblending</a>
-                <a class="btn btn-link" href="">Mesotherapy</a>
+                <a class="btn btn-link" href="service">HydraFacial</a>
+                <a class="btn btn-link" href="service">Dermaben</a>
+                <a class="btn btn-link" href="service">LVL</a>
+                <a class="btn btn-link" href="service">Microblending</a>
+                <a class="btn btn-link" href="service">Mesotherapy</a>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Quick Links</h4>
@@ -29,14 +29,12 @@
                 <a class="btn btn-link" href="service">Our Services</a>
 
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
                 <div class="position-relative mx-auto" style="max-width: 400px;">
                     <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
                     <a href="{{ route('register') }}">   <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"style="background:white;border:1px solid white;font-weight: bold; color:black ">  SignUp</button></a>
                 </div>
-            </div>
+
         </div>
     </div>
 

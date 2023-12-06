@@ -103,13 +103,25 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 15px 0;
+        font-size: 18px;
     }
 
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
+    }
+
+    .navbar-toggler {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 60px;
     }
 }
 
@@ -124,16 +136,33 @@
 }
 
 .navbar-light.sticky-top {
-    top: -100px;
-    transition: .5s;
+    top: 0; /* Set it to 0 for better visibility on small screens */
+    transition: top 0.5s ease-in-out; /* Adjusted transition property for smoother effect */
 }
 
+@media (max-width: 767.98px) {
+    .navbar-light.sticky-top {
+        top: 0; /* Adjusted top value for better visibility on smaller screens */
+    }
+}
 @media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 30px;
+        padding: 25px 0;
+        font-size: 20px;
+    }
+
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 80px;
+        font-size: 30px; /* Adjust the font size as needed */
+    }
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
         margin-top: 0;
-        top: 150%;
+        top: 100%;
         opacity: 0;
         visibility: hidden;
         transition: .5s;
@@ -146,7 +175,38 @@
         opacity: 1;
     }
 }
+@media (max-width: 575.98px) {
+    .navbar-light .navbar-collapse {
+        padding: 15px;
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link.my-appointment {
+        margin-right: 0;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
 
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-link.my-appointment {
+        margin-right: 0;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        /* Adjust the styles for iPad Air here */
+        a.btn-primary {
+            display: inline-block; /* Show the button as inline-block on iPad Air */
+            margin-top: 10px; /* Add some top margin for spacing */
+        }
+
+        /* You may need to adjust other styles based on your design */
+    }
 
 /*** Header ***/
 @media (max-width: 768px) {
@@ -575,6 +635,7 @@
     color: var(--light);
     border: 1px solid #FFFFFF;
     transition: .3s;
+
 }
 
 .footer .btn.btn-social:hover {

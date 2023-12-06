@@ -322,6 +322,46 @@ public function userindexhome(){
 
 }
 
+
+public function deleteUser($id) {
+
+    $data=User::find($id);
+    $data->delete();
+
+    return redirect()->back()->with('message','Delete User is successfully');
+
+
+}
+
+
+public function updateUser($id){
+
+    $data=User::find($id);
+
+    return view('admin.updateUser',compact('data'));
+}
+
+public function editUser (Request $request,$id){
+
+    $data=User::find($id);
+
+    $data->name=$request->name;
+
+    $data->email=$request->email;
+
+    $data->phone=$request->phone;
+
+    $data->address=$request->address;
+    $data->usertype=$request->usertype;
+
+
+
+
+    $data->save();
+    return redirect()->back()->with('message', 'User Details Updated Successfully');
+}
+
+
 public function showcontact(){
 
     $data=Contact::all();
@@ -354,7 +394,15 @@ public function showcontact(){
 
     }
 
+    public function deleteContact($id) {
 
+        $data=Contact::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('message','Delete Contact is successfully');
+
+
+    }
 
     public function showtestimonial(){
 

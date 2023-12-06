@@ -59,7 +59,7 @@ label{
 
 <div style="padding:15px">
     <label>Discreption</label>
-    <input type="text"style="color:black;" name="discreption" placeholder="Write the number"required="">
+    <input type="text"style="color:black;" name="discreption" placeholder="Write the discreption"required="">
 
     </div>
 
@@ -67,7 +67,7 @@ label{
 
 <div style="padding:15px">
     <label>Price</label>
-    <input type="text"style="color:black;" name="price" placeholder="Write the speciality"required="">
+    <input type="number"style="color:black;" name="price" placeholder="Write the price"required="">
 
     </div>
 

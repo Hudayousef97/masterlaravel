@@ -19,7 +19,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Feedback</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol style="display:flex;font-size:30px">
                     <li class="breadcrumb-item"><a class="text-black" href="home">Home/</a></li>

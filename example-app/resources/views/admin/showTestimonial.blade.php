@@ -20,7 +20,7 @@
         <!-- partial -->
         <div class="container mt-5">
             <div>
-                <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >Testimonial </h1>
+                <h1 class="fs-1 text-black font-weight-bold" style="margin-top:3%;margin-right:2%" >feedback </h1>
 
 </div>
 <br>

@@ -1,3 +1,7 @@
+@include('include.top')
+@include('include.bar')
+@include('include.bottom')
+
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
